@@ -1,18 +1,18 @@
 # Site settings
-title: Will Wang's Blog
-SEOTitle: 王志彪的博客
+title: Zheng Yang's Blog
+SEOTitle: 杨正浩的博客
 header-img: img/post-bg-index.jpg
-email: wzbcode@163.com
-description: "Every failure is leading towards success."
-keyword: "王志彪的博客, Will Wang, 王志彪, Java"
-url: "https://flyingwzb.github.io/"          # your host, for absolute URL
+email: 1358709431@qq.com
+description: "做一个有灵魂的程序员"
+keyword: "杨正浩的博客, Zheng Yang, 杨正浩, Java,后端开发"
+url: "https://nchu-student-6.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/flyingwzb/flyingwzb.github.io.git" # you code repository
+github_repo: "https://github.com/nchu-student-6/nchu-student-6.github.io" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "但行好事，莫问前程。"
-sidebar-avatar: /img/will-wang.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "雄关漫道真如铁 而今迈步从头越。"
+sidebar-avatar: /img/ZhengYang.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
