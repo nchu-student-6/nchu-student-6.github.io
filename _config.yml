@@ -1,87 +1,57 @@
-# Site settings
-title: "Zheng Yang's Blog"
-SEOTitle: "杨正浩的博客"
-header-img: "img/post-bg-index.jpg"
-email: "1358709431@qq.com"
-description: "做一个有灵魂的程序员"
-keyword: "杨正浩的博客, Zheng Yang, 杨正浩, Java,后端开发"
-url: "https://nchu-student-6.github.io/" # your host, for absolute URL
-baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/nchu-student-6/nchu-student-6.github.io" # your code repository
-
-# Sidebar settings
-sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "雄关漫道真如铁 而今迈步从头越。"
-sidebar-avatar: "/img/ZhengYang.jpg" # use absolute URL, seeing it's used in both `/` and `/about/`
-
-# SNS settings
+---
+title: Zheng Yang's Blog
+SEOTitle: 杨正浩的博客
+header-img: img/post-bg-index.jpg
+email: 1358709431@qq.com
+description: 做一个有灵魂的程序员
+keyword: 杨正浩的博客, Zheng Yang, 杨正浩, Java,后端开发
+url: https://nchu-student-6.github.io/
+baseurl: ""
+github_repo: https://github.com/nchu-student-6/nchu-student-6.github.io
+sidebar: true
+sidebar-about-description: 雄关漫道真如铁 而今迈步从头越。
+sidebar-avatar: /img/ZhengYang.jpg
 RSS: false
-weibo_username: "wzb1994"
-zhihu_username: "zongguanxian"
-github_username: "flyingwzb"
-# facebook_username: "username"
-# jianshu_username: "jianshu_id"
-twitter_username: "wzbcode"
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-permalink: "pretty"
+weibo_username: wzb1994
+zhihu_username: zongguanxian
+github_username: flyingwzb
+twitter_username: wzbcode
+permalink: pretty
 paginate: 10
-exclude: ["less", "node_modules", "Gruntfile.js", "package.json", "README.md"]
-anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-gems: ["jekyll-paginate"]
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: "kramdown"
-highlighter: "rouge"
+exclude:
+  - less
+  - node_modules
+  - Gruntfile.js
+  - package.json
+  - README.md
+anchorjs: true
+gems:
+  - jekyll-paginate
+markdown: kramdown
+highlighter: rouge
 kramdown:
-  input: "GFM" # use Github Flavored Markdown !important
-
-# 评论系统
-# Disqus
-disqus_shortname: "disqus_dfI4XpjFuM"
-
-# Gitalk
+  input: GFM
+disqus_shortname: disqus_dfI4XpjFuM
 gitalk:
-  enable: false # 是否开启Gitalk评论，false表示关闭
-  clientID: "ae47d898c3d118b467be" # 生成的clientID
-  clientSecret: "c30e8df95d413ec73785dea5b4237424165f77c7" # 生成的clientSecret
-  repo: "flyingwzb.github.io" # 仓库名称
-  owner: "flyingwzb" # github用户名
-  admin: "flyingwzb"
-  distractionFreeMode: true # 是否启用类似FB的阴影遮罩
-
-# 统计
-# Analytics settings
-# Baidu Analytics
-# ba_track_id: "b50bf2b12b5338a1845e33832976fd68"
-
-# Google Analytics
-# ga_track_id: "UA-137811562-1" # Format: UA-xxxxxx-xx
-# ga_domain: "auto" # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
-
-# Featured Tags
-featured-tags: true # 是否使用首页标签
-featured-condition-size: 1 # 相同标签数量大于这个数，才会出现在首页
-
-# Progressive Web Apps
+  enable: false
+  clientID: ae47d898c3d118b467be
+  clientSecret: c30e8df95d413ec73785dea5b4237424165f77c7
+  repo: flyingwzb.github.io
+  owner: flyingwzb
+  admin: flyingwzb
+  distractionFreeMode: true
+featured-tags: true
+featured-condition-size: 1
 chrome-tab-theme-color: "#000000"
 service-worker: true
-
-# Friends
 friends:
-  - {title: "书舟网", href: "http://kindle.archiew.top/"}
-  - {title: "阮一峰", href: "http://www.ruanyifeng.com/home.html"}
-  - {title: "阿里巴巴", href: "https://www.alibabagroup.com/cn/global/home"}
-  - {title: "腾讯", href: "https://www.tencent.com/zh-cn/index.html"}
-  - {title: "字节跳动", href: "https://www.bytedance.com/zh"}
-
-# 支付宝、微信打赏二维码
-alipay_qr_img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wgARCABpAGoDAREAAhEBAxEB/8QAHgAAAgIDAQEBAQAAAAAAAAAABwgGCQIEBQoDAQD/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQQFAgYD/9oADAMBAAIQAxAAAACfG4CcZAgBFjgjplVZeWLULkRwvNKWgKDIk8AiMgapMSuwZE6YtRzD0GlcgohyQDEuG/CGK4RUdEUMK4BD0NlVJTuWPndFCOcM2dkVgJItZYkE0tyKOAIBXG7K4UEiJ0ho5Bs3QeGYzpaUUZA5LNyCCZTywVmr9c6+IJ5gH2hNxhwMjLnoMPPiRQm4VSC9CNV+UN8P7/b3vMp56LLYANQHATHpiPPcSwIglhJp5L9Sx/YWtZ9bq+YDczWqNgsaMy18qHOkDAkgLhfiMG8ZmJDDIubLETzilaBciBImZ0BexpSChhAYGQ2i7wrfNk65VQQ0fMZUT45BFgWGuO6W/lFxDiYk2DqbpWWWKgeOcKWTcNhdiUCkZGBCANga4iYPzAYcXgS8t+LUTYMjEyPmYGZkfh8TZPwwPof/xAAvEAABBAMBAAECBAYBBQAAAAAGBAUHCAIDCQEKABMQFBczERUWMnFyGDE1OHbB/9oACAEBAAESAN5rYW0t3Lne+XVeq9RpXsoS6MPqEQ2RLHye1hYJ2DQFhU8/d/JNSzpBYsH4KTuaq5kJXaSgCfNoUiKZy6ZTy/dGnMqroMF1jq6P4XpGNCmwXX2xFF2CbKuNgYZ2HP4dElSx7mj45vV+xc+wvagqL15VP5DHDMyrhkX5W33uzcntEr9fsJOa4XZTd4SFQx3xtVa0EYU0a1oh+R3hxfECR39kOgfee4Nan/OYJj0HkuQx4t2he/K1913mQ6sCb1W9rVy0kll/9C9ZWF3vkkArXdiC3okdSiTKlxutc8JUA9E3JKpQ/JkpdS9sRbJgHNL+2tdtn+wUM88pGn+Muly+bWmO1aFArRwe7qyKFhBwW71CpauZESjfuDoHLLOF3YICBWj1+Lil9ZkTWg4HcK7VUx6vxdI8lxTuGgwewd/F7jySlWBYV5t2dfLIohZb
-wechat_qr_img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wgARCABpAGoDAREAAhEBAxEB/8
+  - title: 书舟网
+    href: http://kindle.archiew.top/
+  - title: 阮一峰
+    href: http://www.ruanyifeng.com/home.html
+  - title: 阿里巴巴
+    href: https://www.alibabagroup.com/cn/global/home
+  - title: 腾讯
+    href: https://www.tencent.com/zh-cn/index.html
+  - title: 字节跳动
+    href: https://www.bytedance.com/zh
