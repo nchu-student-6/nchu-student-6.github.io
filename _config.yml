@@ -41,7 +41,7 @@ gitalk:
   admin: flyingwzb
   distractionFreeMode: true
 featured-tags: true
-featured-condition-size: 1
+featured-condition-size: 0
 chrome-tab-theme-color: "#000000"
 service-worker: true
 friends:
