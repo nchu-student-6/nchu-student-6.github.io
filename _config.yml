@@ -13,8 +13,8 @@ sidebar-about-description: 雄关漫道真如铁 而今迈步从头越。
 sidebar-avatar: /img/ZhengYang.jpg
 RSS: false
 weibo_username: wzb1994
-zhihu_username: zongguanxian
-github_username: flyingwzb
+zhihu_username: 羊羊羊
+github_username: nchu-student-6
 twitter_username: wzbcode
 permalink: pretty
 paginate: 10
@@ -31,6 +31,7 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
+Disqus（https://disqus.com/）
 disqus_shortname: disqus_dfI4XpjFuM
 gitalk:
   enable: false
