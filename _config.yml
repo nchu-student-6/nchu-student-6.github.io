@@ -31,7 +31,6 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
-Disqus（https://disqus.com/）
 disqus_shortname: disqus_dfI4XpjFuM
 gitalk:
   enable: false
@@ -56,3 +55,5 @@ friends:
     href: https://www.tencent.com/zh-cn/index.html
   - title: 字节跳动
     href: https://www.bytedance.com/zh
+  - title: 语雀
+    href: https://www.yuque.com/dashboard/books
